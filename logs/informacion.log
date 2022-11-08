@@ -1,0 +1,48 @@
+08 nov 2022;12:31:23 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;12:36:41 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;12:36:41 - [connectDDBB] - java.sql.SQLException: No suitable driver found for jdbc:oracle
+08 nov 2022;12:38:18 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;12:38:18 - [connectDDBB] - java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+08 nov 2022;12:38:50 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;12:38:50 - [connectDDBB] - java.sql.SQLException: La dirección URL de Oracle especificada no es válida
+08 nov 2022;12:39:27 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;12:39:27 - [connectDDBB] - java.sql.SQLException: La dirección URL de Oracle especificada no es válida
+08 nov 2022;12:39:34 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;12:39:34 - [connectDDBB] - java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+08 nov 2022;12:40:19 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;12:40:20 - [connectDDBB] - java.sql.SQLException: ORA-28009: connection as SYS should be as SYSDBA or SYSOPER
+
+08 nov 2022;12:41:29 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;12:43:27 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;12:43:28 - [connectDDBB] - Conexion exitosa
+08 nov 2022;12:56:36 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;12:56:37 - [main] - Conexion exitosa
+08 nov 2022;13:03:23 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;13:03:23 - [main] - Conexion exitosa
+08 nov 2022;13:03:24 - [main] - ID_SOCCER_PLAYER	NAME
+08 nov 2022;13:03:24 - [main] - 1	JESÃšS NAVAS
+08 nov 2022;13:03:24 - [main] - 2	JULES KOUNDÃ‰
+08 nov 2022;13:03:24 - [main] - 3	YOUSSEF EN-NESYRI
+08 nov 2022;13:06:43 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;13:06:43 - [main] - Conexion exitosa
+08 nov 2022;13:06:43 - [main] - oracle.jdbc.driver.ForwardOnlyResultSet@a4b2d8f
+08 nov 2022;13:06:43 - [main] - oracle.jdbc.driver.ForwardOnlyResultSet@a4b2d8f
+08 nov 2022;13:06:43 - [main] - oracle.jdbc.driver.ForwardOnlyResultSet@a4b2d8f
+08 nov 2022;13:08:47 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;13:08:47 - [main] - Conexion exitosa
+08 nov 2022;13:09:24 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;13:09:25 - [main] - Conexion exitosa
+08 nov 2022;13:09:32 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;13:09:32 - [main] - Conexion exitosa
+08 nov 2022;13:09:43 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;13:09:44 - [main] - Conexion exitosa
+08 nov 2022;13:12:51 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;13:12:52 - [main] - Conexion exitosa
+08 nov 2022;13:14:03 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;13:14:04 - [main] - Conexion exitosa
+08 nov 2022;13:19:39 - [connectDDBB] - Conectandose con la Base de datos
+08 nov 2022;13:19:40 - [main] - Conexion exitosa

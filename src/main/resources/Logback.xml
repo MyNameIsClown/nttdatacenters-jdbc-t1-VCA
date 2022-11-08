@@ -1,0 +1,19 @@
+<configuration>
+	<appender name="carrascoLogger" class="ch.qos.logback.core.FileAppender">
+		<file>./logs/informacion.log</file>
+		<append>true</append>
+		<immediateFlush>true</immediateFlush>
+		<encoder>
+			<pattern>%date{dd MMM yyyy;HH:mm:ss} - [%method] - %msg%n</pattern>
+		</encoder>
+	</appender>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>[%method] - %msg%n</pattern>
+		</encoder>
+	</appender>
+	<root level="debug">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="carrascoLogger"/>
+	</root>
+</configuration>
