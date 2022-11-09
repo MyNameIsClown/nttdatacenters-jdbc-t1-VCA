@@ -18,44 +18,42 @@ import org.slf4j.LoggerFactory;
 public class App {
 	/** Logger */
 	private static final Logger LOG = LoggerFactory.getLogger(App.class);
-	
+
 	/**
 	 * Main
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// Sentencia
-		Statement appStatement;
-		// Resultados
-		ResultSet appResultSet;
-		
+
 		// Se establece la conexion con la base de datos
 		try (Connection appConnection = connectDDBB()) {
 
 			LOG.debug("Conexion exitosa");
-			appStatement = appConnection.createStatement();
-			
-			// Se consultan los jugadores del equipo con id 1
-			appResultSet = appStatement
-					.executeQuery("SELECT * FROM NTTDATA_ORACLE_SOCCER_PLAYER WHERE ID_SOCCER_TEAM = 1");
 
-			System.out.println("ID_SOCCER_PLAYER\tNAME");
-			
-			// Se hace la lectura de los datos
-			while (appResultSet.next()) {
-				System.out.println(
-						appResultSet.getString("ID_SOCCER_PLAYER") + "\t\t\t" + appResultSet.getString("NAME"));
+			try (Statement appStatement = appConnection.createStatement()) {
+				// Se consultan los jugadores del equipo con id 1
+				ResultSet appResultSet = appStatement
+						.executeQuery("SELECT * FROM NTTDATA_ORACLE_SOCCER_PLAYER WHERE ID_SOCCER_TEAM = 1");
+
+				System.out.println("ID_SOCCER_PLAYER\tNAME");
+
+				// Se hace la lectura de los datos
+				while (appResultSet.next()) {
+					System.out.println(
+							appResultSet.getString("ID_SOCCER_PLAYER") + "\t\t\t" + appResultSet.getString("NAME"));
+				}
 			}
 		} catch (SQLException e) {
-			//Texto de error
+			// Texto de error
 			StringBuilder builder = new StringBuilder();
 			builder.append("Ha sucdedido un error inesperado --> ");
 			builder.append(e.toString());
-			
+
 			LOG.error(builder.toString());
 		}
 	}
-	
+
 	/**
 	 * Establece la conexion con la base de datos
 	 * 
